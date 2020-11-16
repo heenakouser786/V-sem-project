@@ -1,0 +1,240 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="657.6,2939.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:besm="clr-namespace:BalaReva.EasyPowerPoint.Scope.Main;assembly=BalaReva.Easy.PowerPoint" xmlns:bess="clr-namespace:BalaReva.EasyPowerPoint.Scope.Slides;assembly=BalaReva.Easy.PowerPoint" xmlns:bp="clr-namespace:BalaReva.PowerPoint;assembly=BalaReva.Easy.PowerPoint" xmlns:bp1="clr-namespace:BalaReva.PowerPoint;assembly=BalaReva.PowerPoint" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="41">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>BalaReva.EasyPowerPoint.Scope.Main</x:String>
+      <x:String>BalaReva.EasyPowerPoint.Base</x:String>
+      <x:String>BalaReva.PowerPoint</x:String>
+      <x:String>BalaReva.EasyPowerPoint.Scope.Slides</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>BalaReva.Easy.PowerPoint</AssemblyReference>
+      <AssemblyReference>BalaReva.PowerPoint</AssemblyReference>
+      <AssemblyReference>BalaReva.Easy.PowerPoint.Utilities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="668,2874.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="attdt" />
+      <Variable x:TypeArguments="sd:DataTable" Name="resultdt" />
+      <Variable x:TypeArguments="x:Boolean" Name="boolMatch" />
+      <Variable x:TypeArguments="sd:DataTable" Name="regdt" />
+      <Variable x:TypeArguments="x:String" Name="Name" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[regdt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="626.4,88" sap2010:WorkflowViewState.IdRef="ReadRange_4" SheetName="registration" WorkbookPath="C:\Users\Heena\Documents\Book1.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ui:ReadRange AddHeaders="True" DataTable="[attdt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="626.4,88" sap2010:WorkflowViewState.IdRef="ReadRange_5" SheetName="attendence" WorkbookPath="C:\Users\Heena\Documents\Book1.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ui:ReadRange AddHeaders="True" DataTable="[resultdt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="626.4,88" sap2010:WorkflowViewState.IdRef="ReadRange_6" SheetName="registration" WorkbookPath="C:\Users\Heena\Documents\Book1.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ui:ClearDataTable DataTable="[resultdt]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="626.4,22.4" sap2010:WorkflowViewState.IdRef="ClearDataTable_2" />
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[regdt]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="626.4,949.6" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="574.4,800.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="532.8,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">[boolMatch]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[attdt]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="532.8,358.4" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="line" />
+                  </ActivityAction.Argument>
+                  <If Condition="[row.item(&quot;Name&quot;).ToString = line.item(&quot;Participants&quot;).ToString]" sap:VirtualizedContainerService.HintSize="483.2,209.6" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[boolMatch]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </If.Then>
+                  </If>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <If Condition="[boolMatch = True]" sap:VirtualizedContainerService.HintSize="532.8,209.6" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Then>
+                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[row.ItemArray]" DataTable="[resultdt]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+              </If.Then>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:WriteRange AddHeaders="True" DataTable="[resultdt]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="626.4,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="C:\Users\Heena\Documents\Book1.xlsx">
+      <ui:WriteRange.StartingCell>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:WriteRange.StartingCell>
+    </ui:WriteRange>
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[resultdt]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="626.4,1189.6" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="576.8,1040.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="PwD" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="535.2,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[row.item("Name").ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <besm:PowerPointScope ModifyPassword="{x:Null}" OpenPassword="{x:Null}" DisplayName="PowerPoint Application Scope" FilePath="C:\Users\Heena\Documents\UiPath\Demo.pptx" sap:VirtualizedContainerService.HintSize="535.2,396.8" sap2010:WorkflowViewState.IdRef="PowerPointScope_1">
+              <besm:PowerPointScope.Body>
+                <ActivityAction x:TypeArguments="besm:PowerPointObject">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="besm:PowerPointObject" Name="PptObj" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="275.2,256" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="bp:SlideObject" Name="slideobj" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <bess:SlideExtractor Delay="3" DisplayName="Slide Extractor" sap:VirtualizedContainerService.HintSize="233.6,61.6" sap2010:WorkflowViewState.IdRef="SlideExtractor_1" SlideIndex="1" SlideResult="[slideobj]" />
+                    <bess:TextShapeEdit ExecutionResult="{x:Null}" Delay="3" DisplayName="Text ShapeEdit" sap:VirtualizedContainerService.HintSize="233.6,61.6" sap2010:WorkflowViewState.IdRef="TextShapeEdit_1" SlideIndex="1" TextIndex="3" TextStyle="[New TextShape(Name)]" />
+                  </Sequence>
+                </ActivityAction>
+              </besm:PowerPointScope.Body>
+            </besm:PowerPointScope>
+            <bp1:ExportToPdf ExecutionResult="{x:Null}" DisplayName="Export To PDF" FilePath="C:\Users\Heena\Documents\UiPath\Demo.pptx" sap:VirtualizedContainerService.HintSize="535.2,69.6" sap2010:WorkflowViewState.IdRef="ExportToPdf_1" PDFFilePath="[&quot;C:\Users\Heena\Documents\UiPath\Certificate of participation\&quot;+Name+&quot;.pdf&quot;]" />
+            <Sequence sap:VirtualizedContainerService.HintSize="535.2,301.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAhwtYrbFqykGeX4u0EQM5OwAAAAACAAAAAAAQZgAAAAEAACAAAAASbgJywzlnbBQTX9n7Qc+PTk2BlId7X40EhQ4utiN6NwAAAAAOgAAAAAIAACAAAABSvXJ9msTz+UMfESXDZHXzsV89XBmkOj5fbsslrIAAVCAAAABDIfkKw0XPJ/zmWD9OyJby3uGRcSQLQ4OuFAuoNwqmokAAAAAh7YdlnIF9MCj/oUPXebMG4XPjYoLq/+m5C65vPpDOogSYOlN7pV283eM3lD9lYYLbcW6+dVAtdVv1QxUheYU5" Result="[PwD]" />
+              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="Please find the attached document for the certificate of participation " DisplayName="Send SMTP Mail Message" Email="kouserheenahk6@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[PwD]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Certificate of participation" To="[row.item(&quot;email&quot;).ToString]">
+                <ui:SendMail.Files>
+                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                    <InArgument x:TypeArguments="x:String">["C:\Users\Heena\Documents\UiPath\Certificate of participation\"+Name+".pdf"]</InArgument>
+                  </scg:List>
+                </ui:SendMail.Files>
+              </ui:SendMail>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
